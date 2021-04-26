@@ -1,0 +1,176 @@
+/* Homepage Grid */
+.gridHomepage{
+    
+    display: grid;
+    height: 100vh;
+    width: auto;
+    grid-template-areas:
+    "header header header"
+    "nav mainHomepage asideHomepage"
+    "footer footer footer"
+    ;
+    grid-template-columns: 10% auto 15%;
+    grid-template-rows: 15% auto 15%;
+    grid-gap: 10px;
+    
+    /* Mobile Query */
+    @media only screen and (max-width: 576px) {
+        width: 100%;
+        grid-template-areas:
+        "header"
+        "nav"
+        "mainHomepage"
+        "footer"
+        ;
+        grid-template-columns: 100%;
+        grid-template-rows: 20% 10% auto 16%;
+    }
+    /* Tablet/Laptop Query */
+    @media only screen and (min-width:576px) and (max-width: 992px){
+        width: 100%;
+        grid-template-areas:
+        "header"
+        "nav"
+        "mainHomepage"
+        "footer"
+        ;
+        grid-template-columns: 100%;
+        grid-template-rows: 20% 10% auto 16%;
+        .navBar{
+            flex-direction: row;
+            justify-content: space-evenly;
+        }
+    }
+}
+
+/* Gallery Grid */
+.gridGallery{
+    display: grid;
+    height: 100vh;
+    width: auto;
+    grid-template-areas:
+    "header header"
+    "nav mainGallery"
+    "footer footer"
+    ;
+    grid-template-columns: 10% auto;
+    grid-template-rows: 15% auto 15%;
+    grid-gap: 10px;
+
+    @media only screen and (max-width: 576px) {
+        width: 100%;
+        grid-template-areas:
+        "header"
+        "nav"
+        "mainGallery"
+        "footer"
+        ;
+        grid-template-columns: 100%;
+        grid-template-rows: 20% 10% auto 16%;
+
+        .gallery__image{
+            height: 225px; width: auto;
+        }
+    }
+    /* Tablet/Laptop Query */
+    @media only screen and (min-width:576px) and (max-width: 992px){
+        width: 100%;
+        grid-template-areas:
+        "header"
+        "nav"
+        "mainGallery"
+        "footer"
+        ;
+        grid-template-columns: 100%;
+        grid-template-rows: 20% 10% auto 16%;
+
+        .navBar{
+            flex-direction: row;
+            justify-content: space-evenly;
+        }
+    }
+}
+
+/* Social Grid */
+.gridSocial{
+    display: grid;
+    height: 100vh;
+    width: auto;
+    grid-template-areas:
+    "header header"
+    "nav mainSocial"
+    "footer footer"
+    ;
+    grid-template-columns: 10% auto;
+    grid-template-rows: 14% auto 16%;
+    grid-gap: 10px;
+
+    @media only screen and (max-width: 576px) {
+        width: 100%;
+        grid-template-areas:
+        "header"
+        "nav"
+        "mainSocial"
+        "footer"
+        ;
+        grid-template-columns: 100%;
+        grid-template-rows: 20% 10% auto 16%;
+    }
+    @media only screen and (min-width: 576px) and (max-width: 992px){
+        width: 100%;
+        grid-template-areas:
+        "header"
+        "nav"
+        "mainSocial"
+        "footer"
+        ;
+        grid-template-columns: 100%;
+        grid-template-rows: 20% 10% auto 16%;
+        .navBar{
+            flex-direction: row;
+            justify-content: space-evenly;
+        }
+    }
+}
+
+/* Commission Grid */
+.gridCommission{
+    display: grid;
+    height: 100vh;
+    width: auto;
+    grid-template-areas:
+    "header header"
+    "nav mainCommission"
+    "footer footer"
+    ;
+    grid-template-columns: 10% auto;
+    grid-template-rows: 14% auto 16%;
+    grid-gap: 10px;
+
+    @media only screen and (max-width: 576px) {
+        width: 100%;
+        grid-template-areas:
+        "header"
+        "nav"
+        "mainCommission"
+        "footer"
+        ;
+        grid-template-columns: 100%;
+        grid-template-rows: 20% 10% auto 16%;
+    }
+    @media only screen and (min-width: 576px) and (max-width: 992px){
+        width: 100%;
+        grid-template-areas:
+        "header"
+        "nav"
+        "mainCommission"
+        "footer"
+        ;
+        grid-template-columns: 100%;
+        grid-template-rows: 20% 10% auto 16%;
+        .navBar{
+            flex-direction: row;
+            justify-content: space-evenly;
+        }
+    }
+}

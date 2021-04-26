@@ -1,0 +1,29 @@
+.mainSocial{
+    grid-area: mainSocial;
+    .socialProfiles{
+        height: 100%; width: 100%;
+        display: flex; flex-direction: row; flex-wrap: wrap;
+        justify-content: center; align-items: center;
+
+        background-color: $lightaccent;
+        border-radius: 5px;
+        
+        .socialProfiles__icons{
+            height: 450px; width: 350px;
+            margin: 40px; padding: 15px;
+            box-shadow: 5px 5px 20px $darkshade;
+            text-align: center;
+
+            color: black;
+            background-color: $lightshade;
+            border-radius: 8px;
+            h2{
+                border-bottom: 1px solid $lightaccent;
+            }
+            img{
+                height: 200px; width: auto;
+                border-radius: 50%;
+                }
+            }
+        }
+    }

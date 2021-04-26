@@ -1,0 +1,30 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    h1, h2, h3, h4, h5, h6{
+      font-family: 'Fjalla One', sans-serif;
+    }
+    p{
+      font-family: 'Cantarell', sans-serif;
+    }
+  }
+  html{
+    font-size: 100%;
+  }
+  body{
+    background-color: white;
+  }
+
+@import "core/palette";
+
+@import "layout/header";
+@import "layout/nav";
+@import "layout/footer";
+
+@import "views/homepage";
+@import "views/gallery";
+@import "views/social";
+@import "views/commission";
+
+@import "layout/grid";

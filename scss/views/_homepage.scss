@@ -1,0 +1,25 @@
+.mainHomepage{
+    grid-area: mainHomepage;
+
+    background-color: #9e9990;
+    text-align: center;
+    border-radius: 5px;
+    padding: 15px;
+    .profile-img{
+        height: 250px; width: auto;
+        filter: grayscale(1);
+    }
+}
+
+#main-square{
+    background-color: $lightshade;
+    border: 7px double $darkshade; border-radius: 5px;
+}
+
+/* Twitter Embed Styling*/
+.asideHomepage{
+    grid-area: asideHomepage;
+    width: auto;
+    overflow: auto;
+    border-radius: 5px;
+}

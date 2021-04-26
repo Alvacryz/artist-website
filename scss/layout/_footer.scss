@@ -1,0 +1,54 @@
+/* = Footer =*/
+
+footer{
+    grid-area: footer;
+
+    height: 100%; width: auto;
+    display: flex; flex-direction: column;
+    justify-content: center; align-items: center;
+
+    background-color: $darkshade;
+    text-align: center;
+
+    .footer__icons{       
+        display: flex; flex-direction: row;
+        justify-content: center;
+        list-style-type: none;
+        
+        /*Buttons*/
+        a{
+            margin: 10px;
+            i{
+                height: 30px; width: 30px;
+                    
+                font-size: 18px;
+                background-color: white;
+                color: $darkshade;
+                border-radius: 50%;
+                line-height: 30px;
+                text-align: center;
+                }
+                i:hover{
+                    color: rgb(255, 255, 255);
+                    background-color: $darkshade;
+                    transition: 0.5; transition-duration: 0.5s;
+                    font-size: 25px;
+                }
+            }
+        }
+
+    .footer__contact{
+        margin-top: 10px;
+        color: $lightshade;
+        font-style: italic; font-weight: lighter;
+        
+        h3{
+            width: fit-content;
+            margin: auto;
+            border-bottom: 1px solid $lightaccent;
+        }
+        p{
+            letter-spacing: 5px;
+        }
+    }
+}

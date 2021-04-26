@@ -1,0 +1,100 @@
+/* = Navigator = */
+nav{
+    height: 100%; width: 100%;
+    margin-top: auto; margin-bottom: auto;
+    background-color: black;
+    border-radius: 5px;
+    font-family: 'Cantarell', sans-serif;
+    font-size: 0.9em; letter-spacing: 1px;
+
+    grid-area: nav;
+
+    overflow: hidden;
+    .navBar{
+        height: 100%; width: 100%;
+        display: flex; flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        /*Buttons*/
+        .navBar__buttons{
+            height:auto; width: 125px;
+            display: flex; flex-direction: row;
+            align-items: center;
+            margin: 50px;
+            
+            transition-delay: 0.2s;
+            i{
+                height: 15px; width: 15px;
+                color: $lightaccent;
+                text-align: center;
+                margin-right: 0.5rem;
+            }
+            a{
+                color: white;
+                text-decoration: none;
+            }
+            /*Transition Animation*/
+            a:hover{
+            transition-duration: 1s;
+            color: $lightshade;
+            border-bottom: 1px solid $lightaccent;
+            padding-bottom: 2px;
+            text-decoration: none;
+            }
+        }
+        
+    }
+}
+
+#active-page{
+    i{
+        color: $lightshade;
+    }
+}
+
+/* Responsive Navbar*/
+@media only screen and (max-width: 576px){
+    nav{
+        font-size: 0.8rem;
+        .navBar{
+            display: flex;
+            flex-direction: row;
+            justify-items: center;
+            align-content: space-around;
+            .navBar__buttons{
+                width: auto;
+                margin-left: 10px;
+                margin-right: 10px;
+                a{
+                    i{
+                        padding-right: 20px;
+                    }
+                }
+                
+            }
+        }
+    }
+}
+@media only screen and (min-width:577px) and (max-width: 992px){
+    nav{
+        font-size: 1rem;
+        .navBar{
+            display: flex;
+            flex-direction: row;
+            justify-items: center;
+            align-content: space-around;
+            .navBar__buttons{
+                width: auto;
+                margin-left: 10px;
+                margin-right: 10px;
+                a{
+                    i{
+                        padding-right: 20px;
+                    }
+                }
+                
+            }
+        }
+    }
+}
