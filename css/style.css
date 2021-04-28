@@ -254,41 +254,44 @@ footer {
   width: 100%;
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
   justify-content: space-evenly;
   align-items: center;
+  flex-wrap: wrap;
   background-color: #a19985;
   border-radius: 5px; }
-  .mainCommission .mainCommission__example {
-    height: fit-content;
-    width: auto;
+  .mainCommission .commission-box {
+    height: 225px;
+    width: 550px;
+    padding: 10px;
+    margin: 20px;
+    background-color: #332c29;
     display: flex;
     flex-direction: row;
-    text-align: center;
-    background-color: #332c29;
-    border-radius: 10px;
-    padding: 15px;
-    margin: 15px; }
-    .mainCommission .mainCommission__example img {
-      height: 150px;
-      width: auto;
-      border: 1px solid black;
-      border-radius: 50%;
-      margin-right: 20px; }
-    .mainCommission .mainCommission__example .details {
-      width: 300px;
-      background-color: #e0e1dd;
-      border-radius: 10px; }
-      .mainCommission .mainCommission__example .details .details__type {
-        height: 10%;
-        width: auto; }
-      .mainCommission .mainCommission__example .details .details__price {
-        height: 80%;
+    border-radius: 2px; }
+    .mainCommission .commission-box .commission-box__A {
+      padding: 20px; }
+      .mainCommission .commission-box .commission-box__A img {
+        height: 150px;
         width: auto;
-        list-style: none;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-evenly; }
+        border-radius: 50%;
+        border: 1px solid black; }
+    .mainCommission .commission-box .commission-box__B {
+      height: auto;
+      width: 100%;
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      background-color: #fbfafa;
+      border: 1px solid black;
+      border-radius: 5px; }
+      .mainCommission .commission-box .commission-box__B h2 {
+        border-bottom: 1px solid black; }
+      .mainCommission .commission-box .commission-box__B ul {
+        list-style-type: none; }
+        .mainCommission .commission-box .commission-box__B ul li {
+          padding: 5px; }
 
 /* Homepage Grid */
 .gridHomepage {
