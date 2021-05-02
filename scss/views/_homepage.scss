@@ -1,12 +1,14 @@
 .mainHomepage{
     grid-area: mainHomepage;
 
-    background-color: #9e9990;
+    background-color: $lightaccent;
     text-align: center;
     border-radius: 5px;
     padding: 15px;
+    
     .profile-img{
-        height: 250px; width: auto;
+        height: auto; width: 200px; max-width: 100%;
+        padding: 10px;
         filter: grayscale(1);
     }
 }
@@ -14,6 +16,9 @@
 #main-square{
     background-color: $lightshade;
     border: 7px double $darkshade; border-radius: 5px;
+    h4{
+        padding: 10px;
+    }
 }
 
 /* Twitter Embed Styling*/

@@ -1,12 +1,10 @@
 .mainGallery{
-    width: auto; height: 100%;
-    margin-right: 10px;
+    height: auto; width: auto;
     grid-area: mainGallery;
     background-color: $lightaccent;
 
     text-align: center;
     border-radius: 5px;
-
 }
 .gallery{
     display: flex; flex-direction: column;
@@ -29,7 +27,7 @@
         }
         div{
             img{
-                height: 200px; width: auto; min-width: 100px;
+                height: auto; width: 225px; 
                 margin: 15px; padding: 10px;
                 opacity: 0.6;
                 box-shadow: 5px 5px 5px rgb(27, 27, 27);

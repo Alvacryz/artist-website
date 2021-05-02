@@ -4,7 +4,7 @@
   box-sizing: border-box; }
   * h1, * h2, * h3, * h4, * h5, * h6 {
     font-family: 'Fjalla One', sans-serif; }
-  * p {
+  * p, * li, * ul {
     font-family: 'Cantarell', sans-serif; }
 
 html {
@@ -157,19 +157,23 @@ footer {
 
 .mainHomepage {
   grid-area: mainHomepage;
-  background-color: #9e9990;
+  background-color: #a19985;
   text-align: center;
   border-radius: 5px;
   padding: 15px; }
   .mainHomepage .profile-img {
-    height: 250px;
-    width: auto;
+    height: auto;
+    width: 200px;
+    max-width: 100%;
+    padding: 10px;
     filter: grayscale(1); }
 
 #main-square {
   background-color: #fbfafa;
   border: 7px double #332c29;
   border-radius: 5px; }
+  #main-square h4 {
+    padding: 10px; }
 
 /* Twitter Embed Styling*/
 .asideHomepage {
@@ -179,9 +183,8 @@ footer {
   border-radius: 5px; }
 
 .mainGallery {
+  height: auto;
   width: auto;
-  height: 100%;
-  margin-right: 10px;
   grid-area: mainGallery;
   background-color: #a19985;
   text-align: center;
@@ -207,9 +210,8 @@ footer {
       border-bottom: 1px solid #fbfafa;
       letter-spacing: 10px; }
     .gallery .gallery__tab div img {
-      height: 200px;
-      width: auto;
-      min-width: 100px;
+      height: auto;
+      width: 225px;
       margin: 15px;
       padding: 10px;
       opacity: 0.6;
@@ -250,8 +252,6 @@ footer {
 
 .mainCommission {
   grid-area: mainCommission;
-  height: 100%;
-  width: 100%;
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
