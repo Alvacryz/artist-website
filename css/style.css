@@ -92,7 +92,7 @@ nav {
         margin-left: 10px;
         margin-right: 10px; }
         nav .navBar .navBar__buttons a i {
-          padding-right: 20px; } }
+          padding-right: 5px; } }
 
 @media only screen and (min-width: 577px) and (max-width: 992px) {
   nav {
@@ -260,25 +260,29 @@ footer {
   background-color: #a19985;
   border-radius: 5px; }
   .mainCommission .commission-box {
-    height: 225px;
-    width: 550px;
-    padding: 10px;
-    margin: 20px;
+    height: auto;
+    width: 575px;
+    padding: 15px;
+    margin: 15px;
     background-color: #332c29;
     display: flex;
     flex-direction: row;
+    align-items: center;
     border-radius: 2px; }
     .mainCommission .commission-box .commission-box__A {
-      padding: 20px; }
+      margin: 15px; }
       .mainCommission .commission-box .commission-box__A img {
-        height: 150px;
-        width: auto;
-        border-radius: 50%;
-        border: 1px solid black; }
+        height: auto;
+        width: 100%;
+        min-width: 150px;
+        max-width: 300px;
+        border: 1px solid black;
+        border-radius: 50%; }
     .mainCommission .commission-box .commission-box__B {
       height: auto;
       width: 100%;
-      padding: 20px;
+      margin: 10px;
+      padding: 10px;
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -309,7 +313,7 @@ footer {
       width: 100%;
       grid-template-areas: "header" "nav" "mainHomepage" "footer";
       grid-template-columns: 100%;
-      grid-template-rows: 20% 10% auto 16%; } }
+      grid-template-rows: 35% 10% auto 16%; } }
   @media only screen and (min-width: 576px) and (max-width: 992px) {
     .gridHomepage {
       width: 100%;
@@ -335,7 +339,7 @@ footer {
       width: 100%;
       grid-template-areas: "header" "nav" "mainGallery" "footer";
       grid-template-columns: 100%;
-      grid-template-rows: 20% 10% auto 16%; }
+      grid-template-rows: 35% 10% auto 16%; }
       .gridGallery .gallery__image {
         height: 225px;
         width: auto; } }
@@ -363,7 +367,7 @@ footer {
       width: 100%;
       grid-template-areas: "header" "nav" "mainSocial" "footer";
       grid-template-columns: 100%;
-      grid-template-rows: 20% 10% auto 16%; } }
+      grid-template-rows: 35% 10% auto 16%; } }
   @media only screen and (min-width: 576px) and (max-width: 992px) {
     .gridSocial {
       width: 100%;
@@ -388,7 +392,9 @@ footer {
       width: 100%;
       grid-template-areas: "header" "nav" "mainCommission" "footer";
       grid-template-columns: 100%;
-      grid-template-rows: 20% 10% auto 16%; } }
+      grid-template-rows: 35% 10% auto 16%; }
+      .gridCommission .commission-box {
+        flex-direction: column; } }
   @media only screen and (min-width: 576px) and (max-width: 992px) {
     .gridCommission {
       width: 100%;
