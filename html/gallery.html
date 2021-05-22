@@ -19,72 +19,115 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
 </head>
 
-<body>
-<!----- Header & Nav ----->
-<div class="gridGallery">
-    <header class="container-fluid text-center" id="header-square">
-        <div class="row h-100">
-            <div class="col flex-column align-self-center">
-                <h1 class="m-0 animate__bounceIn">My Artwork</h1>
-                <p class="m-0">"I swear I get better with time"</p>
-            </div>
+<body class="grid">
+<!----- Header ----->
+<header class="container-fluid text-center" id="header-square">
+    <div class="row h-100">
+        <div class="col flex-column align-self-center">
+            <h1 class="m-0 animate__bounceIn">GALLERY</h1>
+            <p class="m-0">"My humble work on display for you"</p>
         </div>
-    </header>
-    <nav>
-        <ul class="navBar">
-            <li class="navBar__buttons">
+    </div>
+</header>
+<!----- Navigator ----->
+<nav>
+    <ul class="navBar">
+        <!--Index Button-->
+        <li class="navBar__buttons">
+            <a href="../index.html">
                 <i class="fas fa-home fa-fw"></i>
-                <a href="../index.html">Homepage</a>
-            </li>
-            <li class="navBar__buttons" id="active-page">
+                <span>Homepage</span>
+            </a>
+        </li>
+        <!--Gallery Button-->
+        <li class="navBar__buttons" id="active-page">
+            <a href="gallery.html">
                 <i class="fas fa-images fa-fw"></i>
-                <a href="gallery.html">Gallery</a>
-            </li>
-            <li class="navBar__buttons">
+                <span>Gallery</span>
+            </a>
+        </li>
+        <!--Social Media Button-->
+        <li class="navBar__buttons">
+            <a href="social.html">
                 <i class="fas fa-hashtag fa-fw"></i>
-                <a href="../html/social.html">Social Media</a>
-            </li>
-            <li class="navBar__buttons">
+                <span>Social</span>
+            </a>
+        </li>
+        <!--Commission Button-->
+        <li class="navBar__buttons">
+            <a href="commissions.html">
                 <i class="fas fa-paint-brush fa-fw"></i>
-                <a href="../html/commissions.html">Commissions</a>
-            </li>
-          </ul>
-    </nav>
+                <span>Commission</span>
+            </a>
+        </li>
+        <!--Policy Button-->
+        <li class="navBar__buttons">
+            <a href=>
+                <i class="fas fa-list-alt"></i>
+                <span>Policies</span>
+            </a>
+        </li>
+    </ul>
+</nav>
 <!----- Gallery ----->
-    <main class="mainGallery">
-        <div class="gallery">
-            <div class="gallery__tab">
-                <h2>Section 1</h2>
-                <div>
-                    <img class="gallery__image" src="../img/sample-img.png" alt="">
-                    <img class="gallery__image" src="../img/sample-img.png" alt="">
-                    <img class="gallery__image" src="../img/sample-img.png" alt="">
-                    <img class="gallery__image" src="../img/sample-img.png" alt="">
-                    <img class="gallery__image" src="../img/sample-img.png" alt="">
-                </div>
-            </div>
-            <div class="gallery__tab">
-                <h2>Section 2</h2>
-                <div>
-                    <img class="gallery__image" src="../img/sample-img.png" alt="">
-                    <img class="gallery__image" src="../img/sample-img.png" alt="">
-                    <img class="gallery__image" src="../img/sample-img.png" alt="">
-                    <img class="gallery__image" src="../img/sample-img.png" alt="">
-                    <img class="gallery__image" src="../img/sample-img.png" alt="">
-                </div>
-            </div>
-            <div class="gallery__tab">
-                <h2>Section 3</h2>
-                <div>
-                    <img class="gallery__image" src="../img/sample-img.png" alt="">
-                    <img class="gallery__image" src="../img/sample-img.png" alt="">
-                    <img class="gallery__image" src="../img/sample-img.png" alt="">
-                    <img class="gallery__image" src="../img/sample-img.png" alt="">
-                    <img class="gallery__image" src="../img/sample-img.png" alt="">
-                </div>
-            </div>
+<main class="mainGallery">
+
+    <div class="container-fluid text-center mb-3 pt-3 pb-2 border-bottom">
+        <h2>Random Works of Art</h2>
+    </div>
+    
+    <!-- Expanding Image Container -->
+    <div class="gallery-container">
+        <!-- Closing Button -->
+        <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+        <!-- Expanded Image -->
+        <img id="expandedImg">
+        <!-- Image Text/Image Alt -->
+        <div id="imgtext">
         </div>
-    </main>    
+    </div>
+
+    <!--First Gallery Row-->
+
+    <div class="gallery-row">
+        <div class="column">
+          <img src="../img/img-1.png" loading="lazy" alt="Character Illustration - 2021" onclick="myFunction(this);">
+        </div>
+        <div class="column">
+          <img src="../img/img-2.png" loading="lazy" alt="Character Illustration - 2021" onclick="myFunction(this);">
+        </div>
+        <div class="column">
+          <img src="../img/img-3.png" loading="lazy" alt="Character Illustration - 2021" onclick="myFunction(this);">
+        </div>
+        <div class="column">
+            <img src="../img/img-4.png" loading="lazy" alt="Meme - 2021" onclick="myFunction(this);">
+        </div>
+        <div class="column">
+            <img src="../img/img-5.png" loading="lazy" alt="Group Illustration - 2021" onclick="myFunction(this);">
+        </div>
+    </div>
+
+    <!--Second Gallery Row-->
+
+    <div class="gallery-row">
+        <div class="column">
+            <img src="../img/sample-img.png" loading="lazy" alt="Sample Text" onclick="myFunction(this);">
+        </div>
+        <div class="column">
+            <img src="../img/sample-img.png" loading="lazy" alt="Sample Text" onclick="myFunction(this);">
+        </div>
+        <div class="column">
+            <img src="../img/sample-img.png" loading="lazy" alt="Sample Text" onclick="myFunction(this);">
+        </div>
+        <div class="column">
+            <img src="../img/sample-img.png" loading="lazy" alt="Sample Text" onclick="myFunction(this);">
+        </div>
+        <div class="column">
+            <img src="../img/sample-img.png" loading="lazy" alt="Sample Text" onclick="myFunction(this);">
+        </div>
+    </div>
+
+</main>    
 <!----- Footer ----->
 <footer>
     <ul class="footer__icons">
@@ -93,13 +136,26 @@
         <li><a href="http://www.ko-fi.com"><i class="fas fa-coffee"></i></a></li>
     </ul>
     <div class="footer__contact">
-        <h3>
-            Contact
-        </h3>
+        <h3>Please contact the email below for business inquiries:</h3>
         <p>xxxxxx@gmail.com</p>
     </div>
 </footer>
-</div>
+
+<script>
+
+function myFunction(imgs) {
+  // Get the expanded image
+  var expandImg = document.getElementById("expandedImg");
+  // Get the image text
+  var imgText = document.getElementById("imgtext");
+  // Use the same src in the expanded image as the image being clicked on from the grid
+  expandImg.src = imgs.src;
+  // Use the value of the alt attribute of the clickable image as text inside the expanded image
+  imgText.innerHTML = imgs.alt;
+  // Show the container element (hidden with CSS)
+  expandImg.parentElement.style.display = "block";
+}
+</script>
 
 </body>
 </html>

@@ -10,14 +10,16 @@
       font-family: 'Cantarell', sans-serif;
     }
   }
-  html{
+
+html{
     font-size: 100%;
-  }
-  body{
-    background-color: white;
-  }
+}
 
 @import "core/palette";
+
+body{
+  background-color: $maincolor;
+}
 
 @import "layout/header";
 @import "layout/nav";

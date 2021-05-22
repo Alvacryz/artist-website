@@ -19,37 +19,56 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
 </head>
 
-<body>
-<!----- Header & Nav ----->
-<div class="gridSocial">
-    <header class="container-fluid text-center" id="header-square">
-        <div class="row h-100">
-            <div class="col flex-column align-self-center">
-                <h1 class="m-0 animate__bounceIn">My Socials</h1>
-                <p class="m-0">"If you wish to follow me somewhere else"</p>
-            </div>
+<body class="grid">
+<!----- Header ----->
+<header class="container-fluid text-center" id="header-square">
+    <div class="row h-100">
+        <div class="col flex-column align-self-center">
+            <h1 class="m-0 animate__bounceIn">GALLERY</h1>
+            <p class="m-0">"My humble work on display for you"</p>
         </div>
-    </header>
-    <nav>
-        <ul class="navBar">
-            <li class="navBar__buttons">
+    </div>
+</header>
+<!----- Navigator ----->
+<nav>
+    <ul class="navBar">
+        <!--Index Button-->
+        <li class="navBar__buttons">
+            <a href="../index.html">
                 <i class="fas fa-home fa-fw"></i>
-                <a href="../index.html">Homepage</a>
-            </li>
-            <li class="navBar__buttons">
+                <span>Homepage</span>
+            </a>
+        </li>
+        <!--Gallery Button-->
+        <li class="navBar__buttons" ¿>
+            <a href="gallery.html">
                 <i class="fas fa-images fa-fw"></i>
-                <a href="../html/gallery.html">Gallery</a>
-            </li>
-            <li class="navBar__buttons" id="active-page">
+                <span>Gallery</span>
+            </a>
+        </li>
+        <!--Social Media Button-->
+        <li class="navBar__buttons" id="active-page">
+            <a href="social.html">
                 <i class="fas fa-hashtag fa-fw"></i>
-                <a href="social.html">Social Media</a>
-            </li>
-            <li class="navBar__buttons">
+                <span>Social</span>
+            </a>
+        </li>
+        <!--Commission Button-->
+        <li class="navBar__buttons">
+            <a href="commissions.html">
                 <i class="fas fa-paint-brush fa-fw"></i>
-                <a href="../html/commissions.html">Commissions</a>
-            </li>
-          </ul>
-    </nav>
+                <span>Commission</span>
+            </a>
+        </li>
+        <!--Policy Button-->
+        <li class="navBar__buttons">
+            <a href=>
+                <i class="fas fa-list-alt"></i>
+                <span>Policies</span>
+            </a>
+        </li>
+    </ul>
+</nav>
 <!---- Main ----->
 <main class="mainSocial">
     <article class="socialProfiles">
@@ -61,10 +80,12 @@
         <section class="socialProfiles__icons">
             <a href="http://www.instagram.com"><img src="../img/logo-instagram.png" alt=""></a>
             <h2 class="p-3">Instagram</h2>
-            <p class="text-justify">"I have no idea how this works or why this is even here."</p>
+            <p class="text-justify">"I put this here even though I don't use it (yet). I hate my life."</p>
         </section>
         <section class="socialProfiles__icons">
-            <a href="http://www.ko-fi.com"><img src="../img/logo-kofi.png" alt=""></a>
+            <a href="http://www.ko-fi.com">
+                <img src="../img/logo-kofi.png" alt="">
+            </a>
             <h2 class="p-3">Ko-fi</h2>
             <p class="text-justify">"Feeling up to support me in any way? Ko-Fi is my main site to work around commissions & donations from kind strangers."</p>
         </section>
@@ -78,10 +99,10 @@
         <li><a href="http://www.ko-fi.com"><i class="fas fa-coffee"></i></a></li>
     </ul>
     <div class="footer__contact">
-        <h3>Contact</h3>
+        <h3>Please contact the email below for business inquiries:</h3>
         <p>xxxxxx@gmail.com</p>
     </div>
 </footer>
-</div>
+
 </body>
 </html>

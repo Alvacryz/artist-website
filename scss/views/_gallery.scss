@@ -1,45 +1,91 @@
 .mainGallery{
-    height: auto; width: auto;
-    grid-area: mainGallery;
-    background-color: $lightaccent;
+    grid-area: content;
+    height: auto;
+    
+    margin-left: 15px; margin-right: 15px;
 
-    text-align: center;
+    background-color: $darkaccent;
+
     border-radius: 5px;
 }
-.gallery{
-    display: flex; flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    margin: 10px;
-
-    .gallery__tab{
-        display: flex; flex-direction: column;
-        justify-content: space-evenly;
-        background-color: $darkshade;
-        border: 1px solid $lightshade; border-radius: 5px;
-        margin: 10px;
-
-        h2{
-            padding: 10px;
-            color: $lightshade;
-            border-bottom: 1px solid $lightshade;
-            letter-spacing: 10px;
-        }
-        div{
-            img{
-                height: auto; width: 225px; 
-                margin: 15px; padding: 10px;
-                opacity: 0.6;
-                box-shadow: 5px 5px 5px rgb(27, 27, 27);
-                background-color: $darkaccent;
-            }
-            img:hover{
-                transition-duration: 0.5s;
-                opacity: 1;
-            }
-        }
-
-    }
 
 
+
+
+/* The grid */
+.gallery-row{
+    display: flex; flex-direction: row;
+    text-align: center;
+    align-items: center; justify-content: center;
+    margin: 15px;
 }
+
+.column {
+    width: 25%;
+    padding: 10px;
+    display: flex;
+    justify-content: center; align-items: center;
+  }
+  
+  /* Style the images inside the grid */
+  .column img {
+    height: auto;
+    width: 275px; max-width: 100%;
+    opacity: 0.8;
+    cursor: pointer;
+    transition-duration: 0.8s;
+    transition-delay: 0.05s;
+  }
+  
+  .column img:hover {
+    opacity: 1;
+    border: 1px solid $lightshade;
+    box-shadow: #8c8792 0px 5px 15px;
+  }
+  
+  /* Clear floats after the columns */
+  .gallery-row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* The expanding image container (positioning is needed to position the close button and the text) */
+  .gallery-container {
+    width: fit-content;
+    margin-left: auto; margin-right: auto;
+    position: relative;
+    display: none;
+
+    padding: 20px;
+  }
+
+  /* The expanding image Style */
+  #expandedImg{
+    display: block;
+
+    height: auto;
+    width: 800px; max-width: 100%;
+
+    border: 1px solid black;
+    border-radius: 10px;
+  }
+  
+  /* Expanding image text */
+  #imgtext {
+    position: absolute;
+    bottom: 25px;
+    left: 30px;
+    color: white;
+    font-size: 20px;
+  }
+  
+  /* Closable button inside the image */
+  .closebtn {
+    position: absolute;
+    top: 15px;
+    right: 30px;
+    color: white;
+    font-size: 40px;
+    cursor: pointer;
+  }

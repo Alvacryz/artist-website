@@ -22,73 +22,91 @@
     <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 </head>
 
-<body>
-<!----- Header & Nav ----->
-<div class="gridHomepage">
-    <header class="container-fluid text-center" id="header-square">
-        <div class="row h-100">
-            <div class="col flex-column align-self-center">
-                <h1 class="m-0 animate__bounceIn">Welcome to the Art Shack!</h1>
-                <p class="m-0">"My little corner of tiny wonders"</p>
-            </div>
+<body class="gridHomepage">
+<!----- Header ----->
+<header class="container-fluid text-center" id="header-square">
+    <div class="row h-100">
+        <div class="col flex-column align-self-center">
+            <h1 class="m-0 animate__bounceIn">My Portfolio</h1>
+            <p class="m-0">"My little corner of small & tiny wonders"</p>
         </div>
-    </header>
-    <nav>
-        <ul class="navBar">
-            <li class="navBar__buttons" id="active-page">
-                <i class="fas fa-home fa-fw"></i>
-                <a href="index.html">Homepage</a>
-            </li>
-            <li class="navBar__buttons">
-                <i class="fas fa-images fa-fw"></i>
-                <a href="html/gallery.html">Gallery</a>
-            </li>
-            <li class="navBar__buttons">
-                <i class="fas fa-hashtag fa-fw"></i>
-                <a href="html/social.html">Social Media</a>
-            </li>
-            <li class="navBar__buttons">
-                <i class="fas fa-paint-brush fa-fw"></i>
-                <a href="html/commissions.html">Commissions</a>
-            </li>
-          </ul>
-    </nav>
-<!----- Homepage ----->
-    <main class="mainHomepage">
+    </div>
+</header>
 
-        <!--Section 1/Artist Info-->
-        <div class="container text-left mb-3 pt-3 pb-2 border-bottom">
-            <h2>¿Who are you?</h2>
-        </div>
+<!----- Navigator ----->
+<nav>
+    <ul class="navBar">
+        <!--Index Button-->
+        <li class="navBar__buttons" id="active-page">
+            <a href="index.html">
+                <i class="fas fa-home fa-fw"></i>
+                <span>Homepage</span>
+            </a>
+        </li>
+        <!--Gallery Button-->
+        <li class="navBar__buttons">
+            <a href="html/gallery.html">
+                <i class="fas fa-images fa-fw"></i>
+                <span>Gallery</span>
+            </a>
+        </li>
+        <!--Social Media Button-->
+        <li class="navBar__buttons">
+            <a href="html/social.html">
+                <i class="fas fa-hashtag fa-fw"></i>
+                <span>Social</span>
+            </a>
+        </li>
+        <!--Commission Button-->
+        <li class="navBar__buttons">
+            <a href="html/commissions.html">
+                <i class="fas fa-paint-brush fa-fw"></i>
+                <span>Commission</span>
+            </a>
+        </li>
+        <!--Policy Button-->
+        <li class="navBar__buttons">
+            <a href=>
+                <i class="fas fa-list-alt"></i>
+                <span>Policies</span>
+            </a>
+        </li>
+    </ul>
+</nav>
+
+<!----- Homepage ----->
+<main class="mainHomepage ml-3 mr-3">
     
-    <div class="mainContent">
-        <div class="container" id="main-square">
-            <div class="row m-3">
-                <div class="col-lg-3 flex-column align-self-center">
-                    <img class="profile-img rounded-circle" src="img/idiot.png" alt="">
-                    <h3>Tomás Cristofani</h3>
-                </div>
-                <div class="col-lg-9 flex-column align-self-center pl-5 pr-5">
-                    <h4>About the artist</h4>
-                    <p class="text-justify">
-                    "Hello! My name is Tom, 24 years old, and I'm a hobbyist artist trying to make some enjoyable content out there during my spare time, whenever my studies allow for it to happen."
-                    <br><br>
-                    "I'm from Argentina, and our country is currently struggling financially, and due to this I had to come out of my cave and begin opening commission slots to support myself and my studies. As much as I dislike the fact that I'm doing commissions out of necessity, I still love what I do for people to simply enjoy my work" <br><br>
-                    "Just don't expect me to ever be satisfied with anything I make."
-                    </p>
-                </div>
+    <!--Section 1/Artist Info-->
+    <div class="container text-left mb-3 pt-3 pb-2 border-bottom">
+        <h2>¿Who are you?</h2>
+    </div>
+    <div class="container p-3" id="main-square">
+        <div class="row">
+            <div class="col-lg-3 flex-column align-self-center">
+                <img class="profile-img rounded-circle" src="img/idiot.png" alt="">
+                <h3>Tomás Cristofani</h3>
+            </div>
+            <div class="col-lg-9 flex-column align-self-center pl-5 pr-5">
+                <h4>About the artist</h4>
+                <p class="text-justify">
+                "Hello! My name is Tom, 24 years old, and I'm a hobbyist artist trying to make some enjoyable content out there during my spare time, whenever my studies allow for it to happen."
+                <br><br>
+                "I'm from Argentina, and our country is currently struggling financially, and due to this I had to come out of my cave and begin opening commission slots to support myself and my studies. As much as I dislike the fact that I'm doing commissions out of necessity, I still love what I do for people to simply enjoy my work" <br><br>
+                "Just don't expect me to ever be satisfied with anything I make."
+                </p>
             </div>
         </div>
     </div>
 
-        <!--Section 2/Artist Goals-->
-        <div class="container text-right mt-3 mb-3 pt-2 pb-2 border-bottom">
-            <h2>¿What are your goals?</h2>
-        </div>
-
-        <div class="container" id="main-square">
-            <div class="row p-2">
-                <p class="text-justify p-4">
+    <!--Section 2/Artist Goals-->
+    <div class="container text-right mt-5 mb-3 pt-2 pb-2 border-bottom">
+        <h2>¿What are your goals?</h2>
+    </div>
+    <div class="container mb-4" id="main-square">
+        <div class="row" id="homepage-sectionB">
+            <div class="col-8 text-justify align-self-center">
+                <p class="p-2">
                     As an "amateur" artist, I simply seek to make better works of art that people might enjoy. Whether it is due to commission work or my artistical whims. As I progress, I would be quite interested in making commission work my side job, since drawing is one of the main passions I have in life. My general work stems from Dungeon & Dragons content because it is where I began exposing my art to other people, and thanks to their donations and encouragement is the reason that I am here today.
                     <br><br>
                     A long term goal for me would be to be involved in some D&D content for a big campaign or the sorts, whether it'd be tokens, maps, illustrations, etc. <b>Something I would really love to try</b> is to make some D&D storytime animations of my own. I'm struggling with the ideas in my head at the moment, but my experience with D&D is still scarce compared to some of the people already putting out this type of content. I'm nothing but a fresh newbie compared to them, so we'll see what happens in the future.
@@ -96,16 +114,18 @@
                     Surely there's more for me to attempt in the future, but as of right now, I want to focus on the little things I can afford with my limited free time.
                 </p>
             </div>
+            <div class="col-4 align-self-center" id="homepage-icon">
+                <img src="img/icon-ready.png" alt="">
+            </div>
         </div>
+    </div>
+</main>
 
-        <div class="mainContent">
-            
-        </div>
-    </main>
 <!-- Twitter Embed -->
-    <aside class="asideHomepage container-fluid embed-responsive">
-        <a class="twitter-timeline" data-lang="en" data-theme="dark" href="https://twitter.com/alvacryz?ref_src=twsrc%5Etfw">Tweets by alvacryz</a> 
-    </aside>
+<aside class="asideHomepage embed-responsive">
+    <a class="twitter-timeline" data-lang="en" data-theme="dark" href="https://twitter.com/alvacryz?ref_src=twsrc%5Etfw">Tweets by alvacryz</a> 
+</aside>
+
 <!----- Footer ----->
 <footer>
     <ul class="footer__icons">
@@ -114,9 +134,7 @@
         <li><a href="http://www.ko-fi.com"><i class="fas fa-coffee"></i></a></li>
     </ul>
     <div class="footer__contact">
-        <h3>
-            Contact
-        </h3>
+        <h3>Please contact the email below for business inquiries:</h3>
         <p>xxxxxx@gmail.com</p>
     </div>
 </footer>

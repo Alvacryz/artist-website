@@ -1,19 +1,21 @@
 header{
     grid-area: header;
+    overflow: hidden;
     
     font-style: italic;
     letter-spacing: 5px;
-    overflow: hidden;
     h1{
         color: $lightshade;
         font-size: 4rem;
         font-weight: bolder; 
     }
     p{
-        color: $lightaccent;
+        color: $lightshade;
     }
 }
 #header-square{
-    background-color: $darkshade;
-    border-bottom: 5px double $lightaccent;
+    background-image: url(../../img/snow-background.png);
+    background-position: center;
+    background-size: cover;
+    border-bottom: 5px double $lightshade;
 }

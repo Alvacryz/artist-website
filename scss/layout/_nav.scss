@@ -1,49 +1,52 @@
 /* = Navigator = */
 nav{
-    height: 100%; width: 100%;
-    margin-top: auto; margin-bottom: auto;
+    grid-area: nav;
+
     background-color: black;
-    border-radius: 5px;
     font-family: 'Cantarell', sans-serif;
-    font-size: 0.9em; letter-spacing: 1px;
+    font-size: 1em; letter-spacing: 2px;
 
     grid-area: nav;
 
-    overflow: hidden;
     .navBar{
-        height: 100%; width: 100%;
-        display: flex; flex-direction: column;
-        justify-content: center;
+        height: 100%;
+
+        display: flex; flex-direction: row;
+        justify-content: space-evenly;
         align-items: center;
 
         /*Buttons*/
         .navBar__buttons{
-            height:auto; width: 125px;
-            display: flex; flex-direction: row;
-            align-items: center;
-            margin: 50px;
-            
-            transition-delay: 0.2s;
-            i{
-                height: 15px; width: 15px;
-                color: $lightaccent;
-                text-align: center;
-                margin-right: 0.5rem;
-            }
+            width: 100%; max-width: 180px;
+            margin-top: 0; margin-bottom: 0;
+            margin-left: 5px; margin-right: 5px;
+            padding: 10px;
+
+            list-style-type: none;
+
             a{
                 color: white;
                 text-decoration: none;
+
+                display: flex; flex-direction: row;
+                justify-content: center;
+                align-items: center;
             }
-            /*Transition Animation*/
-            a:hover{
-            transition-duration: 1s;
-            color: $lightshade;
-            border-bottom: 1px solid $lightaccent;
-            padding-bottom: 2px;
-            text-decoration: none;
+        
+            i{
+                color: $lightaccent;
+                text-align: center;
+                margin-right: 5px;
             }
         }
-        
+    }
+}
+/* Navigation Bar Animation */
+.navBar__buttons a:hover{
+    span{
+        transition-delay: 0.08s;
+        transition-duration: 0.8s;
+        opacity: 50%;
     }
 }
 
@@ -51,50 +54,33 @@ nav{
     i{
         color: $lightshade;
     }
+    span{
+        border-bottom: 2px ridge $lightaccent;
+    }
 }
 
 /* Responsive Navbar*/
-@media only screen and (max-width: 576px){
-    nav{
-        font-size: 0.8rem;
-        .navBar{
-            display: flex;
-            flex-direction: row;
-            justify-items: center;
-            align-content: space-around;
-            .navBar__buttons{
-                width: auto;
-                margin-left: 10px;
-                margin-right: 10px;
-                a{
-                    i{
-                        padding-right: 5px;
-                    }
-                }
-                
-            }
-        }
-    }
-}
+
 @media only screen and (min-width:577px) and (max-width: 992px){
     nav{
-        font-size: 1rem;
-        .navBar{
-            display: flex;
-            flex-direction: row;
-            justify-items: center;
-            align-content: space-around;
-            .navBar__buttons{
-                width: auto;
-                margin-left: 10px;
-                margin-right: 10px;
-                a{
-                    i{
-                        padding-right: 20px;
-                    }
-                }
-                
-            }
+        font-size: 0.9rem;
+        letter-spacing: 1px;
+    }
+}
+
+@media only screen and (max-width: 576px){
+    .navBar__buttons{
+        i{
+            font-size: 1.5rem;
+            
+        }
+        i:hover{
+            opacity: 50%;
+            transition-delay: 0.1s;
+            transition-duration: 0.5s;
+        }
+        span{
+            display: none;
         }
     }
 }

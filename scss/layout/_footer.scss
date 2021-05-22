@@ -3,7 +3,6 @@
 footer{
     grid-area: footer;
 
-    height: 100%; width: auto;
     display: flex; flex-direction: column;
     justify-content: center; align-items: center;
 
@@ -36,7 +35,7 @@ footer{
                 }
             }
         }
-
+        
     .footer__contact{
         margin-top: 10px;
         color: $lightshade;
@@ -45,6 +44,7 @@ footer{
         h3{
             width: fit-content;
             margin: auto;
+            font-size: 1.2rem;
             border-bottom: 1px solid $lightaccent;
         }
         p{

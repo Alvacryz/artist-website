@@ -19,93 +19,121 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
 </head>
 
-<body>
-<!----- Header & Nav ----->
-<div class="gridCommission">
-    <header class="container-fluid text-center" id="header-square">
-        <div class="row h-100">
-            <div class="col flex-column align-self-center">
-                <h1 class="m-0 animate__bounceIn">Commission Work</h1>
-                <p class="m-0">"Anything you'd like to request?"</p>
-            </div>
+<body class="grid">
+<!----- Header ----->
+<header class="container-fluid text-center" id="header-square">
+    <div class="row h-100">
+        <div class="col flex-column align-self-center">
+            <h1 class="m-0 animate__bounceIn">GALLERY</h1>
+            <p class="m-0">"My humble work on display for you"</p>
         </div>
-    </header>
-    <nav>
-        <ul class="navBar">
-            <li class="navBar__buttons">
-              <a href="../index.html"><i class="fas fa-home fa-fw"></i>Homepage</a>
-            </li>
-            <li class="navBar__buttons">
-              <a href="../html/gallery.html"><i class="fas fa-images fa-fw"></i>Gallery</a>
-            </li>
-            <li class="navBar__buttons">
-              <a href="../html/social.html"><i class="fas fa-hashtag fa-fw"></i>Social Media</a>
-            </li>
-            <li class="navBar__buttons" id="active-page">
-              <a href="commissions.html"><i class="fas fa-paint-brush fa-fw"></i>Commissions</a>
-            </li>
-          </ul>
-    </nav>
+    </div>
+</header>
+<!----- Navigator ----->
+<nav>
+    <ul class="navBar">
+        <!--Index Button-->
+        <li class="navBar__buttons">
+            <a href="../index.html">
+                <i class="fas fa-home fa-fw"></i>
+                <span>Homepage</span>
+            </a>
+        </li>
+        <!--Gallery Button-->
+        <li class="navBar__buttons" ¿>
+            <a href="gallery.html">
+                <i class="fas fa-images fa-fw"></i>
+                <span>Gallery</span>
+            </a>
+        </li>
+        <!--Social Media Button-->
+        <li class="navBar__buttons">
+            <a href="social.html">
+                <i class="fas fa-hashtag fa-fw"></i>
+                <span>Social</span>
+            </a>
+        </li>
+        <!--Commission Button-->
+        <li class="navBar__buttons" id="active-page">
+            <a href="commissions.html">
+                <i class="fas fa-paint-brush fa-fw"></i>
+                <span>Commission</span>
+            </a>
+        </li>
+        <!--Policy Button-->
+        <li class="navBar__buttons">
+            <a href=>
+                <i class="fas fa-list-alt"></i>
+                <span>Policies</span>
+            </a>
+        </li>
+    </ul>
+</nav>
 <!----- Commissions ----->
 <main class="mainCommission">
 
-<div class="commission-box">
-    <div class="commission-box__A">
-        <img src="../img/sample-img.png" alt="">
+<div class="container-fluid">
+    <div class="row justify-content-around">
+        <div class="col commission-box">
+            <div class="commission-box__A">
+                <img src="../img/sample-img.png" alt="">
+            </div>
+            <div class="commission-box__B">
+                <h3 class="text-center border-bottom border-dark">Type #1 Commission</h3>
+                <ul>
+                    <li>Example 1</li>
+                    <li>Example 2</li>
+                    <li>Example 3</li>
+                    <li>Example 4</li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="col commission-box">
+            <div class="commission-box__A">
+                <img src="../img/sample-img.png" alt="">
+            </div>
+            <div class="commission-box__B">
+                <h3 class=" text-center border-bottom border-dark">Type #1 Commission</h3>
+                <ul>
+                    <li>Example 1</li>
+                    <li>Example 2</li>
+                    <li>Example 3</li>
+                    <li>Example 4</li>
+                </ul>
+            </div>
+        </div>
     </div>
-    <div class="commission-box__B">
-        <h3 class="border-bottom border-dark">Type #1 Commission</h3>
-        <ul>
-            <li>Example 1</li>
-            <li>Example 2</li>
-            <li>Example 3</li>
-            <li>Example 4</li>
-        </ul>
-    </div>
-</div>
-
-<div class="commission-box">
-    <div class="commission-box__A">
-        <img src="../img/sample-img.png" alt="">
-    </div>
-    <div class="commission-box__B">
-        <h3 class="border-bottom border-dark">Type #1 Commission</h3>
-        <ul>
-            <li>Example 1</li>
-            <li>Example 2</li>
-            <li>Example 3</li>
-            <li>Example 4</li>
-        </ul>
-    </div>
-</div>
-
-<div class="commission-box">
-    <div class="commission-box__A">
-        <img src="../img/sample-img.png" alt="">
-    </div>
-    <div class="commission-box__B">
-        <h3 class="border-bottom border-dark">Type #1 Commission</h3>
-        <ul>
-            <li>Example 1</li>
-            <li>Example 2</li>
-            <li>Example 3</li>
-            <li>Example 4</li>
-        </ul>
-    </div>
-</div>
-
-<div class="commission-box">
-    <div class="commission-box__A">
-        <img src="../img/sample-img.png" alt="">
-    </div>
-    <div class="commission-box__B">
-        <h3 class="border-bottom border-dark">Type #1 Commission</h3>
-        <ul>
-            <li>Example 1</li>
-            <li>Example 2</li>
-            <li>Example 3</li>
-            <li>Example 4</li>
-        </ul>
+    <div class="row justify-content-around">
+        <div class="col commission-box">
+            <div class="commission-box__A">
+                <img src="../img/sample-img.png" alt="">
+            </div>
+            <div class="commission-box__B">
+                <h3 class="text-center border-bottom border-dark">Type #1 Commission</h3>
+                <ul>
+                    <li>Example 1</li>
+                    <li>Example 2</li>
+                    <li>Example 3</li>
+                    <li>Example 4</li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="col commission-box">
+            <div class="commission-box__A">
+                <img src="../img/sample-img.png" alt="">
+            </div>
+            <div class="commission-box__B">
+                <h3 class="text-center border-bottom border-dark">Type #1 Commission</h3>
+                <ul>
+                    <li>Example 1</li>
+                    <li>Example 2</li>
+                    <li>Example 3</li>
+                    <li>Example 4</li>
+                </ul>
+            </div>
+        </div>
     </div>
 </div>
 
@@ -118,13 +146,10 @@
         <li><a href="http://www.ko-fi.com"><i class="fas fa-coffee"></i></a></li>
     </ul>
     <div class="footer__contact">
-        <h3>
-            Contact
-        </h3>
+        <h3>Please contact the email below for business inquiries:</h3>
         <p>xxxxxx@gmail.com</p>
     </div>
 </footer>
-</div>
 
 </body>
 </html>

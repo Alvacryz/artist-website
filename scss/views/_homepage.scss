@@ -1,13 +1,13 @@
 .mainHomepage{
     grid-area: mainHomepage;
 
-    background-color: $lightaccent;
+    background-color: $darkaccent;
     text-align: center;
     border-radius: 5px;
     padding: 15px;
     
     .profile-img{
-        height: auto; width: 200px; max-width: 100%;
+        height: auto; width: 300px; max-width: 100%;
         padding: 10px;
         filter: grayscale(1);
     }
@@ -15,16 +15,26 @@
 
 #main-square{
     background-color: $lightshade;
-    border: 7px double $darkshade; border-radius: 5px;
+    
+    box-shadow: #8c8792 10px 5px 15px;
+    border: 7px double $maincolor; border-radius: 5px;
     h4{
         padding: 10px;
+    }
+}
+
+#homepage-icon{
+    img{
+        height: auto;
+        width: 250px; max-width: 100%;
+        overflow: hidden;
     }
 }
 
 /* Twitter Embed Styling*/
 .asideHomepage{
     grid-area: asideHomepage;
-    width: auto;
-    overflow: auto;
     border-radius: 5px;
 }
+
+
