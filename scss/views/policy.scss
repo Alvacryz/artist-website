@@ -1,0 +1,6 @@
+.mainPolicy{
+    grid-area: content;
+    
+    @include content-box;
+}
+

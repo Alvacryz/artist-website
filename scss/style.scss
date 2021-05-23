@@ -16,6 +16,7 @@ html{
 }
 
 @import "core/palette";
+@import "core/mixins";
 
 body{
   background-color: $maincolor;
@@ -29,5 +30,6 @@ body{
 @import "views/gallery";
 @import "views/social";
 @import "views/commission";
+@import "views/policy";
 
 @import "layout/grid";
